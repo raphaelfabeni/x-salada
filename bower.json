@@ -1,0 +1,19 @@
+{
+  "name": "x-burger",
+  "version": "1.0.0",
+  "description": "X-Burger",
+  "license": "MIT",
+  "main": "dist/x-burger.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.3"
+  }
+}
