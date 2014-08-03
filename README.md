@@ -1,6 +1,6 @@
 # web component de gordo.
 
-[veja aqui](https://danielfilho.github.io/x-burger)
+[veja aqui](https://danielfilho.github.io/x-salada)
 
 sempre vejo esses web components e penso: que demais começarem com 'x-'.
 
