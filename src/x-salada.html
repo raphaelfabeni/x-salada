@@ -161,6 +161,82 @@
       background-color: rgba(100, 100, 100, .1);
     }
     #table { text-indent: -9999em; }
+    /* Specific for animations */
+    #bottom {
+      -webkit-animation: simpleDown .5s cubic-bezier(0.28,1.16,0.62,1.01) both;
+              animation: simpleDown .5s cubic-bezier(0.28,1.16,0.62,1.01) both;
+    }
+
+    #meat {
+      -webkit-animation: simpleDown .5s .2s cubic-bezier(0.28,1.16,0.62,1.01) both;
+              animation: simpleDown .5s .2s cubic-bezier(0.28,1.16,0.62,1.01) both;
+    }
+
+    #cheese {
+      -webkit-animation: simpleDown .5s .4s cubic-bezier(0.28,1.16,0.62,1.01) both;
+              animation: simpleDown .5s .4s cubic-bezier(0.28,1.16,0.62,1.01) both;
+    }
+
+    .leaf {
+      -webkit-animation: simpleDown .5s .5s cubic-bezier(0.28,1.16,0.62,1.01) both;
+              animation: simpleDown .5s .5s cubic-bezier(0.28,1.16,0.62,1.01) both;
+    }
+
+    .leaf.big {
+      -webkit-animation: simpleDown .5s .6s cubic-bezier(0.28,1.16,0.62,1.01) both;
+              animation: simpleDown .5s .6s cubic-bezier(0.28,1.16,0.62,1.01) both;
+    }
+
+    #lettuce {
+      -webkit-animation: simpleDown .5s .8s cubic-bezier(0.28,1.16,0.62,1.01) both;
+              animation: simpleDown .5s .8s cubic-bezier(0.28,1.16,0.62,1.01) both;
+    }
+
+    .tomato {
+      -webkit-animation: simpleDown .5s .9s cubic-bezier(0.28,1.16,0.62,1.01) both;
+              animation: simpleDown .5s .9s cubic-bezier(0.28,1.16,0.62,1.01) both;
+    }
+
+    .tomato + .tomato {
+      -webkit-animation: simpleDown .5s 1s cubic-bezier(0.28,1.16,0.62,1.01) both;
+              animation: simpleDown .5s 1s cubic-bezier(0.28,1.16,0.62,1.01) both;
+    }
+
+    #top {
+      -webkit-animation: simpleDown .5s 1.2s cubic-bezier(0.28,1.16,0.62,1.01) both;
+              animation: simpleDown .5s 1.2s cubic-bezier(0.28,1.16,0.62,1.01) both;
+    }
+    
+    #shadow {
+      -webkit-animation: fadeIn .5s ease;
+              animation: fadeIn .5s ease;
+    }
+
+    @keyframes simpleDown {
+      from { transform: translateY(-500px); }
+      to { transform: translateY(0); }
+    }
+
+    @-webkit-keyframes simpleDown {
+      from { 
+        -webkit-transform: translateY(-500px);
+                transform: translateY(-500px);
+      }
+      to {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @-webkit-keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
     </style>
     <!--
       burger took from http://cssdeck.com/labs/css-burger
